@@ -23,6 +23,22 @@ for i in range(len(scrapedcsv)):
             scrapedcsv.loc[i, "GridPosition"] = positioncsv.loc[j, "GridPosition"]
             scrapedcsv.loc[i, "ChangeInPosition"] = positioncsv.loc[j, "ChangeInPosition"]
 
+        elif (scrapedcsv.loc[i, "DriverId"] == "DIG") and (positioncsv.loc[j, "LastName"] =="DI ") and (scrapedcsv.loc[i, "Year"] == positioncsv.loc[j, "Year"]):
+            scrapedcsv.loc[i, "GridPosition"] = positioncsv.loc[j, "GridPosition"]
+            scrapedcsv.loc[i, "ChangeInPosition"] = positioncsv.loc[j, "ChangeInPosition"]
+
+        elif (scrapedcsv.loc[i, "DriverId"] == "DLR") and (positioncsv.loc[j, "LastName"] =="DE ") and (scrapedcsv.loc[i, "Year"] == positioncsv.loc[j, "Year"]):
+            scrapedcsv.loc[i, "GridPosition"] = positioncsv.loc[j, "GridPosition"]
+            scrapedcsv.loc[i, "ChangeInPosition"] = positioncsv.loc[j, "ChangeInPosition"]
+
+        elif (scrapedcsv.loc[i, "DriverId"] == "HUL") and (positioncsv.loc[j, "LastName"] =="HÜL") and (scrapedcsv.loc[i, "Year"] == positioncsv.loc[j, "Year"]):
+            scrapedcsv.loc[i, "GridPosition"] = positioncsv.loc[j, "GridPosition"]
+            scrapedcsv.loc[i, "ChangeInPosition"] = positioncsv.loc[j, "ChangeInPosition"]
+
+        elif (scrapedcsv.loc[i, "DriverId"] == "MOY") and (positioncsv.loc[j, "LastName"] =="PAB") and (scrapedcsv.loc[i, "Year"] == positioncsv.loc[j, "Year"]):
+            scrapedcsv.loc[i, "GridPosition"] = positioncsv.loc[j, "GridPosition"]
+            scrapedcsv.loc[i, "ChangeInPosition"] = positioncsv.loc[j, "ChangeInPosition"]
+            
 scrapedcsv = scrapedcsv.reset_index(drop = True)
 
 for i in range(len(scrapedcsv)):
