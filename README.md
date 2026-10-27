@@ -18,7 +18,7 @@ If you want more data, you can run the scraper and the following code in this or
 3. combining_scraped_data
 4. combining_scraped_and_nonscraped
 
-There are still some lines with missing data, you can delete these to make the dataset run in a machine learning model. Updates may come where I fix this.
+There are still 2 lines with missing data, you can delete these (lines 309 and 403) to make the dataset run in a machine learning model. Updates may come where I fix this.
 
 ML:
 The most recent version of the model is the file called adding_extension within the directory called random_forest_classifier. The other ML files are for experimentation or my MVP and are not the final product.
